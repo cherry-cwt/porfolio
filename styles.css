@@ -317,3 +317,8 @@ footer {
     font-size: 0.9rem;
   }
 }
+
+.video-section {
+  margin: 2rem auto;
+  max-width: 800px;
+}
