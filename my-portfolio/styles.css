@@ -1,0 +1,233 @@
+body {
+  font-family: 'Franklin Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  color: #222;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 3rem 2rem 1.5rem 2rem;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Center the h1 absolutely */
+header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Optional spacer */
+.header-spacer {
+  width: 150px; /* same width as nav to balance the flex layout */
+  padding-top: 20px;
+}
+
+.page-heading {
+  text-align: center;       /* centers the heading */
+  margin-bottom: 40px;      /* space below the header */
+  padding-top: 40px;        /* space above if you want */
+}
+
+.page-heading h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  width: 95vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Make banners span nearly full width */
+.film-banner {
+  margin: 40px auto;
+  max-width: 1300px; /* adjust if needed */
+  width: 95vw;
+}
+
+.banner-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+/* When banner is hovered */
+.banner-link:hover .banner-content {
+  filter: brightness(0.8); /* Darken everything slightly */
+}
+
+/* Reverse text box color on hover */
+.banner-link:hover .banner-text {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Optional: Reverse h3/p specifically */
+.banner-link:hover .banner-text h3,
+.banner-link:hover .banner-text p {
+  color: #fff;
+}
+
+.banner-content {
+  display: flex;
+  width: 100%;
+  height: 450px; /* set fixed banner height */
+  overflow: hidden;
+  border-radius: 0px; /* adjust banner corner*/
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.banner-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.banner-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+  margin-bottom: 40px; /* Space between banners */
+}
+
+/* LEFT side: Text */
+.banner-text {
+  flex: 0.8;
+  background-color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* This centers the text horizontally */
+  text-align: center;  /* Makes text nicely centered */
+}
+
+.banner-text h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.banner-text p {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* RIGHT side: Image */
+.banner-image {
+  flex: 1.2;
+  height: 100%;
+  overflow: hidden;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop + fill */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-image {
+    height: 200px;
+  }
+
+  .banner-text {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.photo-gallery {
+  padding: 0 1vw; /* keeps a little space from page edges */
+}
+
+.photo-row {
+  display: flex;
+  gap: 6px;              /* small gap between images */
+  align-items: flex-start; /* align images at top */
+  margin-bottom: 12px;   /* space between rows */
+  justify-content: flex-start; /* start at left, no extra spacing */
+  padding: 0 10px;       /* little space from page edges */
+  flex-wrap: nowrap;       /* no wrapping */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* No flex:1 so images keep natural width */
+}
+
+.image-container img {
+  height: auto;    /* same height for all images */
+  width: auto;      /* keep aspect ratio */
+  object-fit: contain;
+  display: block;
+  max-width: 100%;  /* don't overflow container */
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #444;
+}
