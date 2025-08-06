@@ -231,3 +231,89 @@ footer {
   text-align: center;
   color: #444;
 }
+
+@media (max-width: 768px) {
+
+  /* HEADER: stack logo and nav */
+  header {
+    padding: 2rem 1rem;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    position: static;
+    transform: none;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .header-spacer {
+    display: none;
+  }
+
+  /* PAGE HEADING */
+  .page-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  /* BANNER: stack image and text */
+  .banner-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-image {
+    height: 200px;
+  }
+
+  .banner-text {
+    padding: 20px;
+  }
+
+  .banner-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  /* PHOTO GALLERY */
+  .photo-row {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .caption {
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
