@@ -334,3 +334,42 @@ footer {
   flex: 2;
   min-width: 320px;
 }
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+  /* HERO SECTION */
+  .hero-section {
+    flex-direction: column;
+    height: auto; /* allow content to grow naturally */
+  }
+
+  .hero-text {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto; /* avoid cropping on mobile */
+  }
+
+  /* CONTACT SECTION */
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-left, 
+  .contact-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .contact-left {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .contact-right iframe {
+    height: 600px; /* taller for mobile */
+  }
+}
