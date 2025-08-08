@@ -410,3 +410,21 @@ footer {
     padding: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  /* Always stack text above image on mobile */
+  .banner-content,
+  .banner-content.reverse {
+    flex-direction: column;
+  }
+
+  /* Ensure text is always on top */
+  .banner-text {
+    order: 1;
+  }
+
+  .banner-image {
+    order: 2;
+    height: 200px; /* keep images smaller for mobile */
+  }
+}
