@@ -52,6 +52,8 @@ header h1 {
   transform: translateX(-50%);
   margin: 0;
   font-size: 2rem;
+  font-family: 'Didot', serif; /* change font */
+  font-weight: 700; /* bolder */
 }
 
 /* Optional spacer */
@@ -90,6 +92,7 @@ footer {
   padding: 1rem;
   background: #eee;
   margin-top: 2rem;
+  font-family: 'Didot', serif; /* change font */
 }
 
 .container {
