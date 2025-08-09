@@ -95,6 +95,14 @@ footer {
   font-family: 'Mongolian Baiti', serif; /* change font */
 }
 
+.demo-word {
+  font-family: Didot; /* example font */
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-style: italic; /* optional */
+  color: white;
+}
+
 .container {
   max-width: 1000px;
   width: 95vw;
