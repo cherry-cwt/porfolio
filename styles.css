@@ -447,11 +447,11 @@ footer {
   }
 }
 
-.contact-left a {
-  color: inherit;
-  text-decoration: none;
+a {
+  color: inherit;        /* Use the surrounding text color */
+  text-decoration: none; /* Remove underline */
 }
 
-.contact-left a:hover {
-  text-decoration: underline;
+a:hover {
+  text-decoration: underline; /* Optional: underline only on hover */
 }
